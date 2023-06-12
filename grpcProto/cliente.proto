@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+service ClienteService {
+  rpc ObterClienteAll(Void) returns (ListaClientes);
+  rpc ObterCliente(ClienteId) returns (Cliente); // retorna uma coleção de clientes
+  rpc CriarCliente(Cliente) returns (ClienteResponse); // retorna uma mensagem de resposta  
+  rpc AtualizarCliente(Cliente) returns (ClienteResponse); // retorna uma mensagem de resposta
+  rpc DeletarCliente(ClienteId) returns (ClienteResponse); // retorna uma mensagem de resposta
+}
+
+message Void {}
+
+// Estrutura classe
+message Cliente {
+  string id = 1;
+  string nome = 2;
+  string email = 3;
+  int32 idade = 4;
+}
+
+// Coleção de clientes [] Array
+message ListaClientes {
+  repeated Cliente clientes = 1;
+}
+
+// pegar a informação
+message ClienteId {
+  string id = 1;
+}
+
+// resposta
+message ClienteResponse {
+  string mensagem = 1;
+}
