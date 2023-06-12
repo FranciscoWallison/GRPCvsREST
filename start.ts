@@ -25,7 +25,8 @@ server.bindAsync(
 app_client.listen(PORT_CLIENT, () => {
   console.log(`Cliente do Express.js em execução na porta localhost:${PORT_CLIENT}`);
 });
-  
+
+// Inicie o servidor REST no Express.js
 app_rest.listen(PORT_REST, () => {
   console.log(`REST do Express.js em execução na porta localhost:${PORT_REST}`);
 });
