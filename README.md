@@ -20,13 +20,22 @@ em toda a sua API.
 
 ## gRPC (Google Remote Procedure Call)
 ````
-O gRPC é um serviço de alto desempenho baseado em RPC (Remote Procedure Call), que simplifica o desenvolvimento de APIs. Com o gRPC, você só precisa definir as requisições e respostas, enquanto ele cuida do restante. Ele é uma estrutura moderna, rápida e eficiente, construída sobre o protocolo HTTP/2. Isso proporciona baixa latência, suporte a streaming, compatibilidade com várias linguagens de programação para clientes e servidores (oficialmente, há suporte para 12 linguagens), e facilita a inclusão de recursos como autenticação, balanceamento de carga, registro de logs e monitoramento.
+O gRPC é um serviço de alto desempenho baseado em RPC (Remote Procedure Call),
+que simplifica o desenvolvimento de APIs. Com o gRPC, você só precisa definir as requisições e respostas,
+enquanto ele cuida do restante. Ele é uma estrutura moderna, rápida e eficiente,
+construída sobre o protocolo HTTP/2. Isso proporciona baixa latência, suporte a streaming,
+compatibilidade com várias linguagens de programação para clientes e servidores
+(oficialmente, há suporte para 12 linguagens), e facilita a inclusão de recursos como autenticação,
+balanceamento de carga, registro de logs e monitoramento.
 
-A arquitetura do gRPC utiliza o formato de mensagem protobuf (Protocol Buffers), que é altamente compacto e eficiente para serializar dados estruturados.
+A arquitetura do gRPC utiliza o formato de mensagem protobuf (Protocol Buffers),
+que é altamente compacto e eficiente para serializar dados estruturados.
 
-As APIs baseadas em RPC são excelentes para ações, ou seja, procedimentos ou comandos específicos. Em certos contextos, o gRPC pode ser uma alternativa mais eficiente do que uma API REST.
+As APIs baseadas em RPC são excelentes para ações, ou seja, procedimentos ou comandos específicos.
+Em certos contextos, o gRPC pode ser uma alternativa mais eficiente do que uma API REST.
 
-O gRPC adere amplamente às semânticas do HTTP sobre o protocolo HTTP/2, o que permite utilizar streaming full-duplex para comunicação entre diferentes sistemas através de uma conexão de rede
+O gRPC adere amplamente às semânticas do HTTP sobre o protocolo HTTP/2,
+o que permite utilizar streaming full-duplex para comunicação entre diferentes sistemas através de uma conexão de rede
 ````
 
 ## RPC - RPC - Remote Procedure Call ( Chamada Remota)
