@@ -46,6 +46,15 @@ Cliente         Service
 (Online Shop)   (Serviço de Pagamento)
 
 ````
+
+## Casos que podemos usar
+````
+Ideal para microsserviços
+Mobile, Browsers e Barcken
+Geração das bibliotecas de forma automática
+Streaming bidirecional utilizando HTTP/2
+````
+
 ## O arquivo com a extensão ```.proto``` é o de protocolo
 
 ````
