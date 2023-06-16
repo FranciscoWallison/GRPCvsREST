@@ -50,10 +50,33 @@ Cliente         Service
 ## Casos que podemos usar
 ````
 Ideal para microsserviços
-Mobile, Browsers e Barcken
+Mobile Browsers
 Geração das bibliotecas de forma automática
 Streaming bidirecional utilizando HTTP/2
 ````
+
+## REST
+````
+Texto / JSON
+Unidirecional
+Alta latência
+Sem contrato (maior chance de erros)
+Sem suporte a streaming (Resquest / Response)
+Design pré-definido
+Bibliotecas de terceiros
+````
+
+## gRPC
+````
+Protocol Buffers
+Bidirecional e Assíncrono
+Baixa latência
+Contrato definido (.proto)
+Suporte a streming
+Desing é livre
+Geração de códigos
+````
+
 
 ## O arquivo com a extensão ```.proto``` é o de protocolo
 
