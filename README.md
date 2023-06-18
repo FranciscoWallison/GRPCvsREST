@@ -47,6 +47,31 @@ Cliente         Service
 
 ````
 
+##  HTTP/2 em relação ao HTTP/1.1 incluem
+````
+Desempenho melhorado: O HTTP/2 utiliza a multiplexação,
+permitindo que várias solicitações sejam enviadas simultaneamente em uma única conexão TCP.
+Isso reduz a latência e melhora o desempenho geral,
+especialmente em redes com alta latência.
+
+Compressão de cabeçalhos: O HTTP/2 introduz a compressão de cabeçalhos,
+o que reduz a quantidade de dados transmitidos e economiza largura de banda.
+
+Priorização de requisições: O HTTP/2 permite que as requisições sejam priorizadas,
+o que garante que recursos importantes sejam carregados primeiro,
+melhorando a experiência do usuário.
+
+Server Push: O HTTP/2 permite que o servidor envie recursos para o cliente antes mesmo de serem solicitados,
+melhorando a eficiência ao evitar atrasos na solicitação desses recursos.
+
+Protocolo binário: O HTTP/2 utiliza um formato de mensagem binária em vez de texto legível,
+o que torna a comunicação mais eficiente e reduz o overhead de análise e serialização de mensagens.
+
+Maior segurança: O uso do HTTP/2 frequentemente implica o uso do HTTPS,
+adicionando uma camada de criptografia para proteger a privacidade e a integridade dos dados transmitidos.
+
+````
+
 ## Casos que podemos usar
 ````
 Ideal para microsserviços
