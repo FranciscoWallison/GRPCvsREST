@@ -71,6 +71,13 @@ Maior segurança: O uso do HTTP/2 frequentemente implica o uso do HTTPS,
 adicionando uma camada de criptografia para proteger a privacidade e a integridade dos dados transmitidos.
 
 ````
+## gRPC utiliza HTTP 2 ao invés de HTTP 1.1
+````
+As APIs REST são construídas no protocolo HTTP 1.1, que usa um modelo de comunicação de solicitação e resposta. Isso significa que, quando um microserviço recebe várias solicitações de vários clientes, ele precisa atendê-las sequencialmente, uma de cada vez, o que pode tornar o sistema mais lento.
+
+Por outro lado, o gRPC utiliza o protocolo HTTP 2 e aproveita seu suporte para comunicação bidirecional. Isso significa que, quando um microserviço recebe várias solicitações de vários clientes, ele pode atendê-las simultaneamente usando a multiplexação, processando muitas solicitações e respostas ao mesmo tempo. Isso resulta em um sistema mais eficiente e com melhor desempenho.
+````
+
 
 ## Casos que podemos usar
 ````
