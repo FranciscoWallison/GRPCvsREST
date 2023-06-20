@@ -1,4 +1,4 @@
-# GRPC vs REST
+# GRPC vs REST vs GRAPHQL
 
 ````
 Até agora, o REST tem sido a forma mais popular de estruturar a comunicação entre APIs usando o protocolo HTTP.
