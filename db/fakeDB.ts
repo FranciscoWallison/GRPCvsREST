@@ -37,7 +37,7 @@ export const listaClientes =
     { "id":"dois_asdasdasd","nome": "Maria", "email": "maria@example.com", "idade": 28 },
     { "id":"tres_asdasdasd","nome": "Pedro", "email": "pedro@example.com", "idade": 35 },
     { "id":"tres_asdasdasd","nome": "Pedro", "email": "pedro@example.com", "idade": 35 },
-    { "id":"um_asdasdasd","nome": "João", "email": "joao@example.com", "idade": 30 },
+    { "id":"um_joao_asdasdasd","nome": "João", "email": "joao@example.com", "idade": 30 },
     { "id":"dois_asdasdasd","nome": "Maria", "email": "maria@example.com", "idade": 28 },
     { "id":"tres_asdasdasd","nome": "Pedro", "email": "pedro@example.com", "idade": 35 },
     { "id":"tres_asdasdasd","nome": "Pedro", "email": "pedro@example.com", "idade": 35 },

@@ -1,13 +1,14 @@
 syntax = "proto3";
 
 service ClienteService {
-  rpc ObterClienteAll(Void) returns (ListaClientes);
-  rpc ObterCliente(ClienteId) returns (Cliente); // retorna uma coleção de clientes
+  rpc ObterClienteAll(Void) returns (ListaClientes); // retorna uma coleção de clientes
+  rpc ObterCliente(ClienteId) returns (Cliente); // retorna um cliente
   rpc CriarCliente(Cliente) returns (ClienteResponse); // retorna uma mensagem de resposta  
   rpc AtualizarCliente(Cliente) returns (ClienteResponse); // retorna uma mensagem de resposta
   rpc DeletarCliente(ClienteId) returns (ClienteResponse); // retorna uma mensagem de resposta
 }
 
+// Estrutura VAZIA
 message Void {}
 
 // Estrutura classe
@@ -23,12 +24,12 @@ message ListaClientes {
   repeated Cliente clientes = 1;
 }
 
-// pegar a informação
+// Pegar a informação
 message ClienteId {
   string id = 1;
 }
 
-// resposta
+// Resposta
 message ClienteResponse {
   string mensagem = 1;
 }
