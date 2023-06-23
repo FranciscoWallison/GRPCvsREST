@@ -19,22 +19,22 @@ server.bindAsync(
       console.error(err);
     }
     server.start()
-    console.log(`Server do GRPC em execução na porta  localhost:${port}`)
+    console.log(`Server do GRPC em execução na porta  127.0.0.1:${port}`)
   }
 );
 
 // Inicie o servidor do cliente no Express.js
 app_client.listen(PORT_CLIENT, () => {
-  console.log(`Cliente do Express.js em execução na porta localhost:${PORT_CLIENT}`);
+  console.log(`Cliente do Express.js em execução na porta http://localhost:${PORT_CLIENT}`);
 });
 
 // Inicie o servidor REST no Express.js
 app_rest.listen(PORT_REST, () => {
-  console.log(`REST do Express.js em execução na porta localhost:${PORT_REST}`);
+  console.log(`REST do Express.js em execução na porta http://localhost:${PORT_REST}`);
 });
   
 // Inicie o servidor GRAPHQL no Express.js
 app_graphql.listen(PORT_GRAPHQL, () => {
-  console.log(`GRAPHQL do Express.js em execução na porta localhost:${PORT_GRAPHQL}/graphql`);
+  console.log(`GRAPHQL do Express.js em execução na porta http://localhost:${PORT_GRAPHQL}/graphql`);
 });
   

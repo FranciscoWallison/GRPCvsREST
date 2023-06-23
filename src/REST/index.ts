@@ -1,5 +1,9 @@
 const express = require('express');
 const app_rest = express();
+
+const swaggerUi = require("swagger-ui-express"),
+swaggerDocument = require("./swagger.json");
+
 // INICIANDO O BANCO
 import { listaClientes } from '../../db/fakeDB'; 
 
@@ -15,5 +19,11 @@ app_rest.put('/clientes', (req: any, res: any) => {
 });
 
 // ...
+
+app_rest.use(
+  '/api-docs',
+  swaggerUi.serve, 
+  swaggerUi.setup(swaggerDocument)
+);
 
 export { app_rest };

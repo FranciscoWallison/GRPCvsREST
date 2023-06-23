@@ -37,7 +37,14 @@ const resolvers = {
   CriarCliente({ nome, email, idade }) {
     // CriarCliente
   }
-  // ...
+
+
+  // Exemplo
+  // {
+  //   ObterClienteAll {
+  //     id, nome, email, idade
+  //   }
+  // }
 };
 
 app_graphql.use(

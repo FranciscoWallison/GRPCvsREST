@@ -1,0 +1,55 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "Exemplo de api rest Clientes",
+      "description": "Clientes API",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    },
+    "host": "localhost:3001",
+    "basePath": "/",
+    "schemes": ["http"],
+    "consumes": ["application/json"],
+    "produces": ["application/json"],
+    
+    "paths": {
+        "/clientes": {
+            "get": {
+                "tags": ["Clientes"],
+                "summary": "Mostra todos os Clientes",
+                "responses": {
+                "200": {
+                    "description": "OK",
+                    "schema": {
+                        "$ref": "#/definitions/Cliente"
+                    }
+                }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "Cliente": {
+            "required": ["nome", "id", "email", "idade"],
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "uniqueItems": true
+                },
+                "nome": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "idade": {
+                    "type": "integer"
+                }
+            }
+        }
+    }
+    
+}
