@@ -30,6 +30,14 @@ server.addService(ClienteService.service, {
     callback(null, listaClientes);
   },
 
+  AtualizarCliente: (call: any, callback: any)  => {
+    const cliente = call.request;
+
+    const mensagem = `Cliente ${cliente.nome} foi atualizado com sucesso!`;
+
+    callback(null, {mensagem});
+  },
+
 });
 
 export { server };

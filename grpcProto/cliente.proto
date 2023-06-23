@@ -13,6 +13,7 @@ message Void {}
 
 // Estrutura classe
 message Cliente {
+  // tipo nome_campo = índice da mensagem
   string id = 1;
   string nome = 2;
   string email = 3;
@@ -24,7 +25,7 @@ message ListaClientes {
   repeated Cliente clientes = 1;
 }
 
-// Pegar a informação
+// Pegar a informação pelo ID
 message ClienteId {
   string id = 1;
 }
