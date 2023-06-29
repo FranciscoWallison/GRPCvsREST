@@ -1,4 +1,9 @@
 # GRPC vs REST vs GRAPHQL
+#### Explicação rapida
+````
+ gRPC e REST são frameworks e arquiteturas de comunicação, enquanto o GraphQL
+é uma linguagem de consulta de dados e uma especificação para APIs. 
+````
 
 ````
 Até agora, o REST tem sido a forma mais popular de estruturar a comunicação entre APIs usando o protocolo HTTP.
